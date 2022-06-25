@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from django.forms import EmailField
 from environs import Env
 
 # For environment variables
@@ -127,7 +128,6 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
@@ -166,3 +166,12 @@ ACCOUNT_UNIQUE_EMAIL = True
 
 # crispy forms config
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# EmailBackend config
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'email'
+# EMAIL_HOST_PASSWORD = 'password'
