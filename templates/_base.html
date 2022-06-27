@@ -11,6 +11,15 @@
 
     {% if user.is_authenticated %}
         <span>Hello {{ user.email }}!</span> | <a href="{% url 'account_logout' %}">Logout</a>
+
+        {% url 'home' as url_path %}
+
+        {% if request.path == url_path %}
+            | <a href="{% url 'account_change_password' %}">Change Password</a>
+        {% else %}
+        
+        {% endif %}
+
     {% else %}
         <a href="{% url 'account_login' %}">Login</a> | <a href="{% url 'account_signup' %}">Signup</a>
     {% endif %}
