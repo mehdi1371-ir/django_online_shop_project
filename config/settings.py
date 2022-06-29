@@ -45,12 +45,12 @@ INSTALLED_APPS = [
 
     # Third party
     'crispy_forms',
-    'allauth',
     'allauth.account',
 
     # Local
-    'accounts',
-    'pages',
+    'accounts.apps.AccountsConfig',
+    'pages.apps.PagesConfig',
+    'products.apps.ProductsConfig'
 ]
 
 SITE_ID = 1
