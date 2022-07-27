@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # Third party
     'crispy_forms',
     'allauth.account',
+    'rosetta',
 
     # Local
     'accounts.apps.AccountsConfig',
@@ -134,6 +135,11 @@ AUTHENTICATION_BACKENDS = [
 
 # LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'fa'
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('fa', 'Persian')
+)
 
 # TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Tehran'
