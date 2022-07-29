@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-26 21:53+0430\n"
+"POT-Creation-Date: 2022-07-27 18:46+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,92 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: models.py:31
+#: models.py:8
+msgid "title"
+msgstr "عنوان"
+
+#: models.py:9 templates/products/product_detail.html:70
+msgid "description"
+msgstr "توضیحات"
+
+#: models.py:10
+msgid "price"
+msgstr "قیمت"
+
+#: models.py:11
+msgid "product status"
+msgstr "وضعیت محصول"
+
+#: models.py:13
+msgid "created time"
+msgstr "زمان انتشار"
+
+#: models.py:14
+msgid "modified time"
+msgstr "زمان ایجاد تغییر"
+
+#: models.py:17
+msgid "Products"
+msgstr "محصولات"
+
+#: models.py:34
 msgid "very bad"
 msgstr "خیلی بد"
 
-#: models.py:32
+#: models.py:35
 msgid "bad"
 msgstr "بد"
 
-#: models.py:33
+#: models.py:36
 msgid "normal"
 msgstr "معمولی"
 
-#: models.py:34
+#: models.py:37
 msgid "good"
 msgstr "خوب"
 
-#: models.py:35
+#: models.py:38
 msgid "perfect"
 msgstr "عالی"
 
-#: models.py:40
+#: models.py:44
+msgid "product"
+msgstr "محصولات"
+
+#: models.py:48
+msgid "comment author"
+msgstr "نویسنده نظر"
+
+#: models.py:49
 msgid "comment text"
 msgstr "متن نظر"
 
-#: models.py:41
+#: models.py:50
 msgid "rate us"
 msgstr "امتیاز دهی"
+
+#: models.py:52
+msgid "comment submited time"
+msgstr "زمان ارسال نظر"
+
+#: models.py:53
+msgid "comment modified time"
+msgstr "زمان تغییر نظر"
+
+#: models.py:55
+msgid "comment status"
+msgstr "وضعیت نظر"
+
+#: models.py:62
+msgid "Comments"
+msgstr "نظرات"
 
 #: templates/products/product_detail.html:17
 msgid "Product details"
 msgstr "جزيیات محصول"
 
 #: templates/products/product_detail.html:40
+#: templates/products/product_detail.html:42
 msgid "$"
 msgstr "تومان"
 
@@ -62,9 +115,29 @@ msgstr "اضافه به سبد خرید"
 msgid "Categories"
 msgstr "دسته بندی ها"
 
-#: templates/products/product_detail.html:70
-msgid "Product description"
-msgstr "توضیحات محصول"
+#: templates/products/product_detail.html:73
+msgid "Details"
+msgstr "ویژگی ها"
+
+#: templates/products/product_detail.html:76
+msgid "comments"
+msgstr "نظرات"
+
+#: templates/products/product_detail.html:90
+msgid "Weight"
+msgstr "وزن"
+
+#: templates/products/product_detail.html:94
+msgid "Size"
+msgstr "سایز"
+
+#: templates/products/product_detail.html:98
+msgid "Color"
+msgstr "رنگ"
+
+#: templates/products/product_detail.html:112
+msgid "Comment for"
+msgstr "نظر برای"
 
 #: templates/products/product_detail.html:145
 msgid "Write your comment"
@@ -73,3 +146,15 @@ msgstr "نظر خود را بنویسید"
 #: templates/products/product_detail.html:150
 msgid "Submit"
 msgstr "ارسال"
+
+#: templates/products/product_detail.html:204
+msgid "About us"
+msgstr "درباره ما"
+
+#: templates/products/product_detail.html:205
+msgid "Terms and Conditions"
+msgstr "قوانین و مقررات"
+
+#: templates/products/product_detail.html:206
+msgid "Contact us"
+msgstr "ارتباط با ما"

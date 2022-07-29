@@ -39,7 +39,7 @@
                             <div class="my-5 py-5 product-price-wrapper mb--25">
                                 <span class="money text-success">{{ product.price }} {% trans "$" %}</span>
                                 <span class="price-separator">-</span>
-                                <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>
+                                <span class="money old-price text-danger">۲۱۰,۰۰۰ {% trans "$" %}</span>
                             </div>
                             <div class="product-action d-flex align-items-sm-center align-content-center mb--30">
                                 <div class="quantity-wrapper d-flex justify-content-start">
@@ -67,13 +67,13 @@
                         <div class="product-data-tab tab-style-3">
                             <div class="nav nav-tabs product-data-tab__head" id="product-tab" role="tablist">
                                 <a class="m-0 product-data-tab__link nav-link active" id="nav-description-tab" data-toggle="tab" href="#nav-description" role="tab" aria-selected="true">
-                                    <span>{% trans "Product description" %}</span>
+                                    <span>{% trans "description" %}</span>
                                 </a>
                                 <a class="m-0 product-data-tab__link nav-link" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-selected="true">
-                                    <span>ویژگی ها</span>
+                                    <span>{% trans "Details" %}</span>
                                 </a>
                                 <a class="m-0 product-data-tab__link nav-link" id="nav-reviews-tab" data-toggle="tab" href="#nav-reviews" role="tab" aria-selected="true">
-                                    <span>نظرات ({{ comments|count}})</span>
+                                    <span>{% trans "comments" %} ({{ comments|count}})</span>
                                 </a>
                             </div>
                             <div class="tab-content product-data-tab__content" id="product-tabContent">
@@ -87,15 +87,15 @@
                                         <table class="table shop_attributes">
                                             <tbody>
                                                 <tr>
-                                                    <th>وزن</th>
+                                                    <th>{% trans "Weight" %}</th>
                                                     <td>۴۳۰ گرم</td>
                                                 </tr>
                                                 <tr>
-                                                    <th>سایز</th>
+                                                    <th>{% trans "Size" %}</th>
                                                     <td>XL</td>
                                                 </tr>
                                                 <tr>
-                                                    <th>رنگ</th>
+                                                    <th>{% trans "Color" %}</th>
                                                     <td>
                                                         <a href="shop-sidebar.html">مشکی</a>,
                                                         <a href="shop-sidebar.html">سبز</a>,
@@ -109,7 +109,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">
                                     <div class="product-reviews">
-                                        <h3 class="review__title">{{ comments|count }} نظر برای {{ product.title }} </h3>
+                                        <h3 class="review__title">{{ comments|count }} {% trans "Comment for" %} {{ product.title }} </h3>
                                         <ul class="review__list">
                                             {% for comment in comments %}
                                                 <li class="review__item">
@@ -195,14 +195,14 @@
                     <div class="col-lg-9 text-center">
                         <div class="footer-widget mb--50">
                             <div class="textwidget">
-                                <img src="assets/img/codingyar_logo.png" alt="Logo">
+                                <img src="{% static 'img/codingyar_logo.png' %}" alt="Logo">
                             </div>
                         </div>
                         <div class="footer-widget mb--50 pb--1">
                             <ul class="footer-menu">
-                                <li><a href="">درباره ما</a></li>
-                                <li><a href="">قوانین و مقررات</a></li>
-                                <li><a href="">تماس با ما</a></li>
+                                <li><a href="">{% trans "About us" %}</a></li>
+                                <li><a href="">{% trans "Terms and Conditions" %}</a></li>
+                                <li><a href="">{% trans "Contact us" %}</a></li>
                             </ul>
                         </div>
                         <div class="footer-widget">

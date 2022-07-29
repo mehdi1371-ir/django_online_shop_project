@@ -10,10 +10,10 @@ class CommentInline(admin.TabularInline):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['title', 'price', 'active']
+    list_display = ['title', 'price', 'datetime_created', 'datetime_modified', 'active',]
     inlines = [CommentInline, ]
 
 
-# @admin.register(Comment)
-# class CommentAdmin(admin.ModelAdmin):
-#     list_display = ['product', 'author', 'body', 'stars', 'active']
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['product', 'author', 'body', 'stars', 'active']
